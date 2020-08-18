@@ -1,0 +1,142 @@
+/* start of sidebar design */
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.menubar {
+    height: 1.5em;
+    width: 1.5em;
+    ;
+}
+
+.menuicon {
+    width: 2em;
+}
+
+
+/* start of dashboard design  */
+
+.card-counter {
+    box-shadow: 2px 2px 10px #DADADA;
+    margin: 5px;
+    padding: 20px 10px;
+    background-color: #fff;
+    height: 100px;
+    border-radius: 5px;
+    transition: .3s linear all;
+}
+
+.card-counter:hover {
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .3s linear all;
+}
+
+.card-counter.primary {
+    background-color: #007bff;
+    color: #FFF;
+}
+
+.card-counter.danger {
+    background-color: #ef5350;
+    color: #FFF;
+}
+
+.card-counter.success {
+    background-color: #66bb6a;
+    color: #FFF;
+}
+
+.card-counter.info {
+    background-color: #26c6da;
+    color: #FFF;
+}
+
+.card-counter i {
+    font-size: 5em;
+    opacity: 0.2;
+}
+
+.card-counter .count-numbers {
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    font-size: 32px;
+    display: block;
+}
+
+.card-counter .count-name {
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 0.5;
+    display: block;
+    font-size: 18px;
+}
+
+.view_btn {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px 10px;
+    text-transform: capitalize;
+    display: block;
+    font-size: 18px;
+}
+
+.small_profile {
+    width: 4em;
+    height: 4em;
+}
+
+.small_profile_navbar{
+    width : 3em;
+    height : 3em;
+}
+
+nav {
+    margin-bottom: 3.5em;
+}
+
+.table_btn{
+    margin-bottom : 6px;
+}
